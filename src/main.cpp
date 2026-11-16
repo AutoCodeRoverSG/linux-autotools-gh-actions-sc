@@ -7,18 +7,18 @@ int main(int argc, char* argv[]) {
 
   if (num == 0) {
     cout << "No arguments provided\n";
-  } else if (num == 0) { // intentional mistake
+  } else if (num == 1) {
     cout << "1 argument provided\n";
   } else if (num == 2) {
     cout << "2 arguments provided\n";
   } else {
     cout << num << " arguments provided\n";
   }
-  if (argv != 0) {
-    cout << "argv not null\n";; // intentional extra-semicolon
+  if (argv != nullptr) {
+    cout << "argv not null\n";
   }
   if (argv == nullptr) {
-    return **argv; // intentional nullptr dereference
+    return 1;
   }
 
   return 0;
